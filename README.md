@@ -1,101 +1,122 @@
-# CV Generator App
+# 📄 CV Generator
 
-A web application built with Python, Django, HTML, CSS, and Tailwind CSS that allows users to create and generate professional resumes through a simple and responsive interface.
+A web-based **CV Generator** built with **Python** and **Django** that enables users to create professional resumes through a simple and intuitive interface. Users can enter their personal, educational, and professional details to generate a well-structured resume and download it as a PDF.
 
-## Features
+---
 
-- 📝 **Profile Creation** — Enter personal, education, and work details to build a profile
-- 📄 **Resume Generation** — Automatically generate a formatted, downloadable resume
-- 🎨 **Modern Templates** — Clean, responsive resume layouts
-- 📊 **Dashboard** — View and manage created resumes
-- 💾 **Download Resume** — Export resume as a downloadable file
-- 💻 **Admin Panel** — Manage users and resume data via Django admin
+## 🚀 Features
 
-## Tech Stack
+* Create professional resumes
+* Add personal information
+* Manage education details
+* Add work experience
+* Add technical and soft skills
+* Showcase projects
+* Add certifications
+* Preview resume before downloading
+* Download resume as PDF
+* Responsive user interface
+* Django Admin Panel
 
-- **Backend:** Python, Django
-- **Frontend:** HTML, CSS, Tailwind CSS
-- **Database:** SQLite
-- **Deployment:** Render
+---
 
-## Project Structure
+## 🛠️ Tech Stack
 
-```
-mysite/
+### Backend
+
+* Python
+* Django
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap
+
+### Database
+
+* SQLite
+
+### Tools
+
+* Git
+* GitHub
+
+---
+
+## 📂 Project Structure
+
+```text
+cv_generator/
+├── cv_generator/
+├── templates/
+├── static/
+├── media/
 ├── manage.py
-├── mysite/          # Project settings, URLs, WSGI/ASGI config
-└── myapp/           # Core app logic
-    ├── models.py
-    ├── views.py
-    ├── urls.py
-    ├── admin.py
-    └── templates/myapp/
-        ├── dashboard.html
-        ├── modern-dashboard.html
-        ├── resume.html
-        ├── modern-resume.html
-        ├── modern_create_profile.html
-        ├── download_resume.html
-        └── accept.html
+├── db.sqlite3
+└── requirements.txt
 ```
 
-## Getting Started
+---
 
-### Prerequisites
-- Python 3.x
-- pip
+## ⚙️ Installation
 
-### Installation
+### Clone the repository
 
-1. Clone the repository
 ```bash
-git clone https://github.com/addy-1922/cv-generator-app.git
-cd cv-generator-app/mysite
+git clone https://github.com/addy-1922/cv-generator.git
+cd cv-generator
 ```
 
-2. Create and activate a virtual environment
+### Create a virtual environment
+
 ```bash
-python -m venv env
-source env/Scripts/activate   # On Windows (Git Bash)
+python -m venv venv
 ```
 
-3. Install dependencies
+### Activate the virtual environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run migrations
+### Apply migrations
+
 ```bash
 python manage.py migrate
 ```
 
-5. Start the development server
+### Run the development server
+
 ```bash
 python manage.py runserver
 ```
 
-6. Visit `http://127.0.0.1:8000/` in your browser
+Open the application in your browser:
 
-## Live Demo
+```text
+http://127.0.0.1:8000/
+```
 
-🔗 [Live Site](#) *(add your Render deployment link here)*
+---
 
-## Screenshots
-
-*(Add screenshots of the dashboard, profile creation form, and generated resume here)*
-
-## Future Improvements
-
-- Multiple resume templates to choose from
-- PDF export with custom styling
-- LinkedIn profile import
-- Resume sharing via public link
-
-## Author
+## 👨‍💻 Author
 
 **Aditya Naik**
-- GitHub: [@addy-1922](https://github.com/addy-1922)
 
-## License
-
-This project is open source and available for learning purposes.
+GitHub: https://github.com/addy-1922
