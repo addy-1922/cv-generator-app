@@ -240,9 +240,8 @@
                 Preview
               </a>
 
-              <!-- Update this href to your PDF download route when available -->
               <a
-                href="#"
+                href="{% url 'download_resume' resume.id %}"
                 class="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-800"
               >
                 <svg
@@ -262,7 +261,7 @@
               </a>
 
               <a
-                href=""
+                href="{% url 'edit_profile' resume.id %}"
                 class="inline-flex items-center gap-1.5 text-sm font-medium text-amber-700 hover:text-amber-800"
               >
                 <svg
@@ -271,93 +270,3 @@
                   fill="currentColor"
                   class="w-4 h-4"
                 >
-                  <path
-                    d="M4 15.5V19a1 1 0 001 1h3.5a1 1 0 00.707-.293l9.5-9.5a1 1 0 000-1.414L15.207 5.293a1 1 0 00-1.414 0l-9.5 9.5A1 1 0 004 15.5z"
-                  />
-                </svg>
-                Edit
-              </a>
-
-              <form action="#" method="post" class="inline">
-                {% csrf_token %}
-                <button
-                  type="submit"
-                  class="inline-flex items-center gap-1.5 text-sm font-medium text-rose-700 hover:text-rose-800"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-4 h-4"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M9 2a1 1 0 00-1 1v1H5a1 1 0 100 2h14a1 1 0 100-2h-3V3a1 1 0 00-1-1H9zm-2 6a1 1 0 011 1v9a2 2 0 002 2h4a2 2 0 002-2V9a1 1 0 112 0v9a4 4 0 01-4 4H10a4 4 0 01-4-4V9a1 1 0 011-1z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  Delete
-                </button>
-              </form>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-
-        {% else %}
-        <!-- Empty state -->
-        <div
-          class="rounded-2xl border-2 border-dashed border-slate-300 p-10 text-center bg-grid-soft bg-[size:20px_20px]"
-        >
-          <div
-            class="mx-auto mb-4 h-14 w-14 rounded-2xl bg-brand-100 text-brand-700 grid place-items-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-7 h-7"
-            >
-              <path
-                d="M12 6a6 6 0 00-6 6v5a3 3 0 003 3h6a3 3 0 003-3v-5a6 6 0 00-6-6z"
-              />
-              <path d="M9 6a3 3 0 116 0v1a3 3 0 11-6 0V6z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900">No CVs yet</h3>
-          <p class="text-slate-600 max-w-md mx-auto mt-1">
-            Create your first CV to get started. You can always come back to
-            edit, duplicate, and export as PDF.
-          </p>
-          <a
-            href="{% url 'save_profile' %}"
-            class="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 text-white font-semibold px-5 py-3 shadow-soft hover:bg-brand-700 transition"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                d="M12 5a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H6a1 1 0 110-2h5V6a1 1 0 011-1z"
-              />
-            </svg>
-            Create CV
-          </a>
-        </div>
-        {% endif %}
-      </div>
-
-      <!-- Footer -->
-      <footer
-        class="max-w-7xl mx-auto px-6 text-center text-sm text-slate-500 py-10"
-      >
-        <p>
-          © {{ now|date:"Y" }} CV Manager. Built with ❤️ using Django &
-          Tailwind.
-        </p>
-      </footer>
-    </main>
-  </body>
-</html>
