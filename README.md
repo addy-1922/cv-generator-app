@@ -48,14 +48,14 @@ A web-based **CV Generator** built with **Python** and **Django** that enables u
 ## 📂 Project Structure
 
 ```text
-cv_generator/
-├── cv_generator/
-├── templates/
-├── static/
-├── media/
-├── manage.py
-├── db.sqlite3
-└── requirements.txt
+cv-generator-app/
+├── mysite/
+│   ├── manage.py
+│   ├── mysite/          # project settings, urls, wsgi/asgi
+│   └── myapp/           # app: models, views, urls, templates, migrations
+├── docs/                # screenshots and extra files
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -65,8 +65,8 @@ cv_generator/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/addy-1922/cv-generator.git
-cd cv-generator
+git clone https://github.com/addy-1922/cv-generator-app.git
+cd cv-generator-app
 ```
 
 ### Create a virtual environment
@@ -93,6 +93,7 @@ source venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+cd mysite
 ```
 
 ### Apply migrations
