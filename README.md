@@ -4,6 +4,14 @@ A web-based **CV Generator** built with **Python** and **Django** that enables u
 
 ---
 
+## 🌐 Live Demo
+
+👉 **https://cv-generator-app-bvjr.onrender.com**
+
+> Hosted on Render's free tier. The first load can take around 50 seconds while the server wakes up. Data may reset when the app restarts.
+
+---
+
 ## 🚀 Features
 
 * Create professional resumes
@@ -32,7 +40,7 @@ A web-based **CV Generator** built with **Python** and **Django** that enables u
 * HTML5
 * CSS3
 * JavaScript
-* Bootstrap
+* Tailwind CSS
 
 ### Database
 
@@ -42,6 +50,7 @@ A web-based **CV Generator** built with **Python** and **Django** that enables u
 
 * Git
 * GitHub
+* Render (deployment)
 
 ---
 
